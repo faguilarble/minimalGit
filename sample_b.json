@@ -1,0 +1,145 @@
+{
+  "tienda": {
+    "nombre": "Dulce Encanto",
+    "propietario": "María López",
+    "direccion": {
+      "calle": "Av. Azúcar 123",
+      "ciudad": "Monterrey",
+      "estado": "Nuevo León",
+      "pais": "México",
+      "codigoPostal": "64000"
+    },
+    "telefono": "+52 81 5555 1234",
+    "horario": {
+      "lunes-viernes": "09:00-20:00",
+      "sabado": "10:00-18:00",
+      "domingo": "Cerrado"
+    }
+  },
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Chocolates rellenos",
+      "categoria": "Chocolate",
+      "precio": 35.50,
+      "stock": 120,
+      "proveedor": "ChocoMex",
+      "fechaIngreso": "2025-07-20"
+    },
+    {
+      "id": 2,
+      "nombre": "Gomitas surtidas",
+      "categoria": "Gomitas",
+      "precio": 15.00,
+      "stock": 200,
+      "proveedor": "Gomitas del Norte",
+      "fechaIngreso": "2025-07-25"
+    },
+    {
+      "id": 3,
+      "nombre": "Caramelos duros",
+      "categoria": "Caramelo",
+      "precio": 5.00,
+      "stock": 500,
+      "proveedor": "SweetFactory",
+      "fechaIngreso": "2025-07-28"
+    },
+    {
+      "id": 4,
+      "nombre": "Paletas de fresa",
+      "categoria": "Paletas",
+      "precio": 7.50,
+      "stock": 300,
+      "proveedor": "Paletón SA",
+      "fechaIngreso": "2025-08-01"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 101,
+      "nombre": "Juan Pérez",
+      "email": "juanperez@example.com",
+      "telefono": "+52 81 4444 9876",
+      "fechaRegistro": "2025-06-15",
+      "comprasTotales": 5
+    },
+    {
+      "id": 102,
+      "nombre": "Ana Torres",
+      "email": "ana.torres@example.com",
+      "telefono": "+52 81 3333 1122",
+      "fechaRegistro": "2025-06-20",
+      "comprasTotales": 8
+    }
+  ],
+  "ventas": [
+    {
+      "ventaId": "V-001",
+      "fecha": "2025-08-05",
+      "clienteId": 101,
+      "productos": [
+        {
+          "productoId": 1,
+          "cantidad": 2,
+          "precioUnitario": 35.50
+        },
+        {
+          "productoId": 2,
+          "cantidad": 5,
+          "precioUnitario": 15.00
+        }
+      ],
+      "total": 152.50,
+      "metodoPago": "Tarjeta"
+    },
+    {
+      "ventaId": "V-002",
+      "fecha": "2025-08-06",
+      "clienteId": 102,
+      "productos": [
+        {
+          "productoId": 4,
+          "cantidad": 10,
+          "precioUnitario": 7.50
+        }
+      ],
+      "total": 75.00,
+      "metodoPago": "Efectivo"
+    }
+  ],
+  "inventario": [
+    {
+      "productoId": 1,
+      "stockActual": 118,
+      "ultimaActualizacion": "2025-08-06"
+    },
+    {
+      "productoId": 2,
+      "stockActual": 195,
+      "ultimaActualizacion": "2025-08-06"
+    },
+    {
+      "productoId": 3,
+      "stockActual": 500,
+      "ultimaActualizacion": "2025-08-06"
+    },
+    {
+      "productoId": 4,
+      "stockActual": 290,
+      "ultimaActualizacion": "2025-08-06"
+    }
+  ],
+  "configuracion": {
+    "moneda": "MXN",
+    "iva": 0.16,
+    "ofertasActivas": [
+      {
+        "nombre": "Promo de verano",
+        "descripcion": "10% de descuento en chocolates",
+        "categoriaAplicada": "Chocolate",
+        "fechaInicio": "2025-08-01",
+        "fechaFin": "2025-08-15"
+      }
+    ]
+  }
+}
