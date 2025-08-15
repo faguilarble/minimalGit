@@ -19,8 +19,15 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ github.event.inputs.commit_sha }}
+      - name: Set up git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
 
       - name: Create and push new branch
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}
           git switch -c "${{ github.event.inputs.branch_name }}"
           git push origin "${{ github.event.inputs.branch_name }}"
