@@ -1,0 +1,62 @@
+{
+  "factory": {
+    "name": "Stellar Engines Inc.",
+    "location": {
+      "city": "Houston",
+      "state": "Texas",
+      "country": "USA"
+    },
+    "founded": 2010,
+    "employees": 250
+  },
+  "rockets": [
+    {
+      "id": "R-101",
+      "name": "Orion-X",
+      "type": "Cargo",
+      "height_m": 70,
+      "stages": 2,
+      "payloadCapacity_kg": 22000,
+      "status": "in production"
+    },
+    {
+      "id": "R-102",
+      "name": "Lunar Hawk",
+      "type": "Crew",
+      "height_m": 58,
+      "stages": 2,
+      "payloadCapacity_kg": 12000,
+      "status": "testing"
+    }
+  ],
+  "productionLines": [
+    {
+      "lineId": "PL-01",
+      "specialization": "First stage assembly",
+      "workers": 45,
+      "machines": ["WeldingBot-3000", "FuelTankAssembler"]
+    },
+    {
+      "lineId": "PL-02",
+      "specialization": "Second stage assembly",
+      "workers": 35,
+      "machines": ["PrecisionDrill-X", "CryoFuelInjector"]
+    }
+  ],
+  "launches": [
+    {
+      "launchId": "L-5001",
+      "rocketId": "R-101",
+      "date": "2025-09-14",
+      "destination": "Low Earth Orbit",
+      "status": "scheduled"
+    },
+    {
+      "launchId": "L-5002",
+      "rocketId": "R-102",
+      "date": "2025-12-05",
+      "destination": "Moon Orbit",
+      "status": "planned"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "company": {
+    "name": "TechNova Solutions",
+    "founded": 2012,
+    "headquarters": {
+      "city": "San Francisco",
+      "state": "CA",
+      "country": "USA"
+    },
+    "departments": [
+      {
+        "id": 1,
+        "name": "Engineering",
+        "manager": "Alice Morgan",
+        "employees": [
+          {
+            "id": 101,
+            "name": "John Carter",
+            "role": "Backend Developer",
+            "skills": [
+              "Java",
+              "Spring Boot",
+              "SQL"
+            ],
+            "active": true
+          },
+          {
+            "id": 102,
+            "name": "Samantha Lee",
+            "role": "Frontend Developer",
+            "skills": [
+              "JavaScript",
+              "React",
+              "CSS"
+            ],
+            "active": true
+          },
+          {
+            "id": 103,
+            "name": "Raj Patel",
+            "role": "DevOps Engineer",
+            "skills": [
+              "AWS",
+              "Docker",
+              "Kubernetes"
+            ],
+            "active": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Marketing",
+        "manager": "Brenda Wilson",
+        "employees": [
+          {
+            "id": 201,
+            "name": "Kevin Hughes",
+            "role": "SEO Specialist",
+            "skills": [
+              "SEO",
+              "Google Analytics",
+              "Content Strategy"
+            ],
+            "active": true
+          },
+          {
+            "id": 202,
+            "name": "Laura Kim",
+            "role": "Content Writer",
+            "skills": [
+              "Copywriting",
+              "Editing",
+              "Blogging"
+            ],
+            "active": true
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "name": "Cloud Infrastructure Upgrade",
+      "status": "in-progress",
+      "deadline": "2025-12-31",
+      "team": [
+        101,
+        103
+      ],
+      "tasks": [
+        {
+          "taskId": "T-001",
+          "description": "Migrate database to AWS RDS",
+          "completed": false
+        },
+        {
+          "taskId": "T-002",
+          "description": "Implement Kubernetes cluster",
+          "completed": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Website Revamp",
+      "status": "completed",
+      "deadline": "2025-06-15",
+      "team": [
+        102,
+        201,
+        202
+      ],
+      "tasks": [
+        {
+          "taskId": "T-101",
+          "description": "Redesign homepage",
+          "completed": true
+        },
+        {
+          "taskId": "T-102",
+          "description": "Optimize site speed",
+          "completed": true
+        },
+        {
+          "taskId": "T-103",
+          "description": "SEO audit and improvements",
+          "completed": true
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "theme": "light",
+    "language": "en-US",
+    "notifications": {
+      "email": true,
+      "sms": false,
+      "push": true
+    },
+    "security": {
+      "twoFactorAuth": true,
+      "lastPasswordChange": "2025-07-10"
+    }
+  },
+  "logs": [
+    {
+      "timestamp": "2025-08-01T09:15:00Z",
+      "userId": 101,
+      "action": "login",
+      "success": true
+    },
+    {
+      "timestamp": "2025-08-02T11:05:00Z",
+      "userId": 103,
+      "action": "login",
+      "success": false
+    },
+    {
+      "timestamp": "2025-08-03T14:20:00Z",
+      "userId": 102,
+      "action": "update-profile",
+      "success": true
+    },
+    {
+      "timestamp": "2025-08-05T08:55:00Z",
+      "userId": 202,
+      "action": "create-task",
+      "success": true
+    }
+  ]
+}
